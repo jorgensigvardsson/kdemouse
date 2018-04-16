@@ -194,7 +194,7 @@ BEGIN
             VALUE "FileDescription", "KDEMouse Application"
             VALUE "FileVersion", "1, 2, 0, 1"
             VALUE "InternalName", "KDEMouse"
-            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "LegalCopyright", "Copyright (C) 2018"
             VALUE "OriginalFilename", "KDEMouse.exe"
             VALUE "ProductName", "KDEMouse Application"
             VALUE "ProductVersion", "1, 2, 0, 1"
@@ -324,7 +324,7 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "res\\KDEMouse.exe.manifest"
+//CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "res\\KDEMouse.exe.manifest"
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED

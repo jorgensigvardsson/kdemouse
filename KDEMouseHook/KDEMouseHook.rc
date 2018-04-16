@@ -53,8 +53,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,1,0,1
- PRODUCTVERSION 1,1,0,1
+ FILEVERSION 1,1,0,2
+ PRODUCTVERSION 1,1,0,2
  FILEFLAGSMASK 0x17L
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -72,12 +72,12 @@ BEGIN
             VALUE "Comments", "Mouse hook for the KDEMouse application."
             VALUE "CompanyName", "Jörgen Sigvardsson"
             VALUE "FileDescription", "KDEMouse Dynamic Link Library"
-            VALUE "FileVersion", "1, 1, 0, 1"
+            VALUE "FileVersion", "1, 1, 0, 2"
             VALUE "InternalName", "KDEMouse"
-            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "LegalCopyright", "Copyright (C) 2018"
             VALUE "OriginalFilename", "KDEMouse.dll"
             VALUE "ProductName", " KDEMouse Dynamic Link Library"
-            VALUE "ProductVersion", "1, 1, 0, 1"
+            VALUE "ProductVersion", "1, 1, 0, 2"
         END
     END
     BLOCK "VarFileInfo"

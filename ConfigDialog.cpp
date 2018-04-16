@@ -16,9 +16,9 @@ LRESULT ConfigDialog::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lP
 	m_chkAlt.SetCheck(Config.bAlt ? 1 : 0);
 	m_chkShift.SetCheck(Config.bShift ? 1 : 0);
 
-	TCHAR buf[20+1] = { 0 };
-	_sntprintf(buf, 20, _T("%d"), Config.nSnapDistance);
-	m_edtSnapDist.SetWindowText(buf);
+	std::basic_stringstream<TCHAR> snapDistanceText;
+	snapDistanceText << Config.nSnapDistance;
+	m_edtSnapDist.SetWindowText(snapDistanceText.str().c_str());
 
 	if(!Config.bCtrl && !Config.bAlt && !Config.bShift)
 		m_chkAlt.SetCheck(1);

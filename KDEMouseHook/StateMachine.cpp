@@ -186,9 +186,6 @@ bool StateMachine::InitiateResize(MOUSEHOOKSTRUCT* pMHS)
 
 bool StateMachine::MaximizeOrNormalize(MOUSEHOOKSTRUCTEX* pMHS)
 {
-	if(!*m_pbIsWin2k)
-		return false;
-	
 	if(!CorrectKeyStroke())
 		return false;
 

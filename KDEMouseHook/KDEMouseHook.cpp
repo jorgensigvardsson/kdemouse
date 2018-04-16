@@ -21,7 +21,6 @@ StateMachine     g_statemachine;
 // declared below. It seems that static initializers are executed only once.
 // These variables are bound to the statemachine object down in DllMain/DLL_PROCESS_ATTACH.
 StateMachine::MouseButtonState g_enState = StateMachine::Nothing;
-bool             g_bIsWin2k = false;
 HWND             g_hWndDrag = 0;
 HWND             g_hWndOldCapture = 0;
 POINT            g_ptPrevPosition = { 0, 0 };
@@ -51,7 +50,6 @@ BOOL APIENTRY DllMain( HINSTANCE hModule,
 		g_statemachine.m_pbShift = &g_bShift;
 		g_statemachine.m_pbActivateWindows = &g_bActivateWindows;
 		g_statemachine.m_penState = &g_enState;
-		g_statemachine.m_pbIsWin2k = &g_bIsWin2k;
 		g_statemachine.m_phWndDrag = &g_hWndDrag;
 		g_statemachine.m_phWndOldCapture = &g_hWndOldCapture;
 		g_statemachine.m_pptPrevPosition = &g_ptPrevPosition;
@@ -89,17 +87,6 @@ static LRESULT CALLBACK HookProc(int nCode, WPARAM wParam, LPARAM lParam)
 
 bool InstallKDEMouseHook(CONFIG conf)
 {
-	// Find out if we're running on Windows 2000 or later. Can't get scroll delta on
-	// earlier systems. :(
-	OSVERSIONINFO ver;
-	ZeroMemory(&ver, sizeof(ver));
-	ver.dwOSVersionInfoSize = sizeof(ver);
-	if(::GetVersionEx(&ver)) {
-		if(ver.dwPlatformId == VER_PLATFORM_WIN32_NT && ver.dwMajorVersion >= 5)
-			g_bIsWin2k = true;
-	} else
-		g_bIsWin2k = false;
-
 	if(g_hHook)
 		return false;
 

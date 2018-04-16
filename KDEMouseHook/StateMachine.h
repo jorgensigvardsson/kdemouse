@@ -9,7 +9,6 @@ public:
 
 public:
 	MouseButtonState* m_penState;
-	bool*             m_pbIsWin2k;
 	HWND*             m_phWndDrag;
 	HWND*             m_phWndOldCapture;
 	POINT*            m_pptPrevPosition;
