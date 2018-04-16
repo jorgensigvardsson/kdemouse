@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KDEMouse", "KDEMouse.vcxproj", "{EC8AF33F-6796-4EBF-AB08-4A7C0C6B9E0B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KDEMouseHook", "KDEMouseHook\KDEMouseHook.vcxproj", "{98857D80-FA4D-45B0-911E-643766B66C49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC8AF33F-6796-4EBF-AB08-4A7C0C6B9E0B}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC8AF33F-6796-4EBF-AB08-4A7C0C6B9E0B}.Debug|x86.Build.0 = Debug|Win32
+		{EC8AF33F-6796-4EBF-AB08-4A7C0C6B9E0B}.Release|x86.ActiveCfg = Release|Win32
+		{EC8AF33F-6796-4EBF-AB08-4A7C0C6B9E0B}.Release|x86.Build.0 = Release|Win32
+		{98857D80-FA4D-45B0-911E-643766B66C49}.Debug|x86.ActiveCfg = Debug|Win32
+		{98857D80-FA4D-45B0-911E-643766B66C49}.Debug|x86.Build.0 = Debug|Win32
+		{98857D80-FA4D-45B0-911E-643766B66C49}.Release|x86.ActiveCfg = Release|Win32
+		{98857D80-FA4D-45B0-911E-643766B66C49}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92FAA4C5-C24D-45DB-8770-1E067D62AB4C}
+	EndGlobalSection
+EndGlobal
