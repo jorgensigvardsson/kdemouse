@@ -48,7 +48,10 @@ LRESULT CMainDlg::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam
 
 	hModule = ::LoadLibrary(_T("KDEMouseHook.dll"));
 	if(!hModule) {
-		MessageBox(_T("Failed to load KDEMouseHook.dll"), _T("Error"), MB_OK | MB_ICONERROR);
+		auto err = ::GetLastError();
+		std::basic_stringstream<TCHAR> buf;
+		buf << _T("Failed to load KDEMouseHook.dll, error: ") << err;
+		MessageBox(buf.str().c_str(), _T("Error"), MB_OK | MB_ICONERROR);
 		DestroyWindow();
 		::PostQuitMessage(0);
 		return TRUE;

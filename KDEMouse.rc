@@ -324,7 +324,7 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-//CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "res\\KDEMouse.exe.manifest"
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "res\\KDEMouse.exe.manifest"
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
